@@ -1,0 +1,15 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner keyboard = new Scanner(System.in);
+    System.out.println("hello, choose any number you like and I will sum up all the values that are divisible by 3 or 5 of that number!");
+    int num = keyboard.nextInt();
+    int sum = 0;
+    for(int i=1;i<=num;i++){
+      if(i%3==0 || i%5==0){
+        sum+=i;
+      }
+    }
+    System.out.println("here is the sum: " + sum);
+  }
+}
