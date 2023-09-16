@@ -1,0 +1,14 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner keyboard = new Scanner(System.in);
+    System.out.println("hello, are you Alice or Bob");
+    String name = keyboard.next();
+    if(name.equals("Alice") || name.equals("alice")){
+      System.out.println("hello Alice");
+    }
+    else {
+      System.out.println("hello Bob");
+    }
+  }
+}
