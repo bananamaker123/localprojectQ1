@@ -1,0 +1,32 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner keyboard = new Scanner(System.in);
+    System.out.println("try to guess the secret number, the secret number is between 1 and 100");
+    int num = keyboard.nextInt();
+    int mystery = (int) (Math.random()*100)+1;
+    int tries = 0;
+    while(num!=mystery){
+      if(num>mystery){
+      System.out.println("your number is too high, guess again");
+        tries++;
+    }
+    else if(num<mystery){
+      System.out.println("your number is too low, guess again");
+        tries++;
+    }
+      num = keyboard.nextInt();
+    }
+    if(num>mystery){
+      System.out.println("your number is too high, guess again");
+        tries++;
+    }
+    else if(num<mystery){
+      System.out.println("your number is too low, guess again");
+        tries++;
+    }
+     if(num==mystery){
+      System.out.println("nice, you got it. It only took you " + tries + " tries");
+    }
+  }
+}
