@@ -1,0 +1,16 @@
+class Main {
+  public static void main(String[] args) {
+    System.out.println("I will print all prime numbers 1-100, because all prime numbers is just too much");
+    System.out.println();
+    for(int i=1;i<100;i++){
+      if(i*i==4 || i*i==9){
+        System.out.println(i + " ");
+      }
+      if(i%2!=0 && i%3 !=0){
+        if(i%i==0){
+        System.out.println(i + " ");
+      }
+      }
+    }
+  }
+}
