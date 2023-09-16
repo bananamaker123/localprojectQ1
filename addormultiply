@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner keyboard = new Scanner(System.in);
+    System.out.println("hello, choose any number you like number!");
+    int num = keyboard.nextInt();
+    System.out.println("would you like it multiplied or added? Indicate with s or m");
+    String choice = keyboard.next();
+    int sum = 0;
+    int product = 1;
+    if(choice.equals("s")){
+      for(int i=1;i<=num;i++){
+        sum+=i;
+    }
+     System.out.println("here is the sum: " + sum);
+    }
+    else{
+      for(int y=1;y<=num;y++){
+        product*=y;
+    }
+     System.out.println("here is the product: " + product);
+    }
+    }
+  }
