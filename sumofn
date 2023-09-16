@@ -1,0 +1,13 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner keyboard = new Scanner(System.in);
+    System.out.println("hello, choose any number you like and I will sum up all the values of 1 to that number!");
+    int num = keyboard.nextInt();
+    int sum = 0;
+    for(int i=0;i<=num;i++){
+      sum+=i;
+    }
+    System.out.println("here is the sum: " + sum);
+  }
+}
